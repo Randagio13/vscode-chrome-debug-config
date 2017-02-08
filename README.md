@@ -16,22 +16,6 @@ VSCode Chrome Debug configuration with Webpack 2
       "verboseDiagnosticLogging": true,
       "sourceMapPathOverrides": {
         "webpack:///*": "${webRoot}/app/*"
-      },
-      "skipFiles": [
-        "node_modules"
-      ]
-    },
-    {
-      "name": "Chrome Debug Server Cart",
-      "type": "chrome",
-      "request": "launch",
-      "sourceMaps": true,
-      "port": 9222,
-      "url": "https://wycart.dev/",
-      "webRoot": "${workspaceRoot}/app",
-      "diagnosticLogging": true,
-      "sourceMapPathOverrides": {
-        "webpack:///./*":   "${webRoot}/*"
       }
     }
   ]
