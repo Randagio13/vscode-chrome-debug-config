@@ -1,6 +1,8 @@
-# vscode-chrome-debug-config
-VSCode Chrome Debug configuration with Webpack 2
+# VSCode Chrome Debug configuration with Webpack 2
 
+Use for this extension: [VSCode Chrome Debug Extension](https://github.com/Microsoft/vscode-chrome-debug)
+
+Add into `.vscode/launch.json` this code.
 ```json
 {
   "version": "0.2.0",
@@ -21,6 +23,6 @@ VSCode Chrome Debug configuration with Webpack 2
   ]
 }
 ```
-into **webpack.config.js** add `devtool: "inline-source-map"`.
+After into **webpack.config.js** add `devtool: "inline-source-map"`.
 
 ### Enjoy your debugging!
