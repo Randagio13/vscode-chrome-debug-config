@@ -15,7 +15,7 @@ Add into `.vscode/launch.json` this code.
       "port": 9222,
       "url": "http://localhost:3000/",
       "webRoot": "${workspaceRoot}",
-      "verboseDiagnosticLogging": true,
+      "trace": true,
       "sourceMapPathOverrides": {
         "webpack:///*": "${webRoot}/app/*"
       }
