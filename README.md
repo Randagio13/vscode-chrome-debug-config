@@ -5,24 +5,25 @@ Use for this extension: [VSCode Chrome Debug Extension](https://github.com/Micro
 Add into `.vscode/launch.json` this code.
 ```json
 {
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Chrome Debug Local",
       "type": "chrome",
       "request": "launch",
+      "name": "Debug Chrome",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}",
       "sourceMaps": true,
-      "port": 9222,
-      "url": "http://localhost:3000/",
-      "webRoot": "${workspaceRoot}",
-      "trace": true,
       "sourceMapPathOverrides": {
-        "webpack:///*": "${webRoot}/app/*"
+        "webpack:///*": "${webRoot}/src/*"
       }
     }
   ]
 }
 ```
-After into **webpack.config.js** add `devtool: "inline-source-map"`.
+After into **webpack.config.js** add `devtool: "inline-source-map" or "source-map"`.
 
 ### Enjoy your debugging!
